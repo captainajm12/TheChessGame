@@ -5,12 +5,15 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import java.io.File;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class Board extends JPanel {	//extend there so it uses JPanel crap
 	
 	BufferedImage image = new BufferedImage(8, 8, BufferedImage.TYPE_INT_RGB);
+	//File pawn = new ();
 
 	public Board(){
 		
@@ -62,6 +65,9 @@ public class Board extends JPanel {	//extend there so it uses JPanel crap
 		//Starting from (0,0) gets total image width and height, then starting from (0,0) gets the width and height of each
 		//individual square
 		
+	}
+	public void pawn(){
+		//pawn = ImageIO.read(Pawn_chessgame);
 	}
 	
 }
